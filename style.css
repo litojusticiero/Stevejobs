@@ -1,0 +1,51 @@
+body{
+    background-color: lightblue;
+    font-family:'Times New Roman';
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+h1::first-letter{
+    font-size: 300%;
+    color: black;
+
+}
+nav{
+    color: blue;
+    text-align: center;
+    font-size: 200%;
+    
+}
+a.nav{
+    text-decoration: none;
+}
+a.nav:hover{
+    background-color: yellow;
+    color: red;
+}
+a.enlace{
+    font-size: 130%;
+}
+a.enlace:link{
+    background-color: white;
+    color: blue;
+}
+a.enlace:visited{
+    background-color: blue;
+    color: white;
+}
+p.vida::first-line{
+    color: red;
+}
+img.steve{
+    float: right;
+    height: 400px;
+}
+h4{
+    counter-reset: contador;
+}
+p.contador::before{
+    content: counter(contador)". ";
+    counter-increment: contador;
+}
